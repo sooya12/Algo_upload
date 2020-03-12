@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>multiple</title>
+<script type="text/javascript">
+	for (var i = 1; i <= 9; i++) {
+		document.write("<br/>" + i + "단")
+		document.write("<table>");
+		for (var j = 1; j <= 9; j++) {
+			document.write("<tr>");
+			document.write("<td>");
+			document.write(i + "</td>");
+			document.write("<td>");
+			document.write(j + "</td>");
+			document.write("<td>");
+			document.write(Number(i)*Number(j) + "</td>");
+			document.write("</tr>");
+		}
+		document.write("</table>");
+	}
+	
+</script>
+</head>
+<body>
+</body>
+</html>

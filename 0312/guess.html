@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>guess</title>
+<script type="text/javascript">
+	var guessNum = Math.floor(Math.random()*10);
+	document.write("임의의 정수 : " + guessNum + "<br/>");
+	
+	var turn = true;
+	var cnt = 0;
+	
+	while(turn){
+		var userInput = prompt("0 ~ 9 정수를 입력해보세요.");
+		cnt = cnt + 1;
+		document.write(cnt + "회 " + userInput + "<br/>");
+		if(userInput == guessNum){
+			turn = false;
+		}
+	}
+	
+	document.write("총 " + cnt + "회 입력하여 성공!");
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
